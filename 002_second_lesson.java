@@ -1,9 +1,9 @@
 // Главный класс
 public class Zoo {
     public static void main(String[] args) {
-        Animal baseAnimal = new Animal();                         // базовый
+        Animal baseAnimal = new Animal();                   // базовый
         Animal customAnimal = new CommonAnimal("Гррр");     // расширение
-        Animal cat = new Cat();                                   // специализация
+        Animal cat = new Cat();                             // специализация
 
         baseAnimal.makeSound();
         customAnimal.makeSound();
