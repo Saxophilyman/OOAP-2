@@ -60,6 +60,13 @@ public abstract class General implements Serializable {
     public final Class<?> getType() {
         return this.getClass();
     }
+
+    public <T> T tryAssign(Class<T> clazz) {
+        if (clazz.isInstance(this)) {
+            return clazz.cast(this);  // безопасное приведение
+        }
+        return null;  
+    }
 }
 
 
