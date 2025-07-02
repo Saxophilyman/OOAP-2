@@ -31,3 +31,8 @@
     по синтаксису они возможны, но по факту это будут новые методы
 
   если же говорить в вариантах protected/public 3 и 4 варианты вполне допустимы
+   class Parent { protected void doWork() {} }
+   class Child extends Parent { @Override public void doWork() {} }
+
+   class Parent { protected void doWork() {} }
+   class Child extends Parent { @Override protected void doWork() {} }
